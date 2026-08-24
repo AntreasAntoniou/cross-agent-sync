@@ -22,6 +22,14 @@ The script does not call a model, upload data, or contact a service. It reads fi
 
 Requirements: Python 3.10+, Git, and macOS or Linux. `rg` is optional but speeds up query filtering.
 
+Install the skill:
+
+```bash
+npx skills add AntreasAntoniou/cross-agent-sync
+```
+
+Then run the local transport from the installed repository or a clone:
+
 ```bash
 python3 scripts/agent_sync.py doctor --project /path/to/project
 python3 scripts/agent_sync.py sync --project /path/to/project --query project-name --days 14
